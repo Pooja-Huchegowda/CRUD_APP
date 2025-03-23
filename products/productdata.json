@@ -1,0 +1,6 @@
+[
+    {"model": "products.product", "pk": 1, "fields": {"ticker": "BTC-USD", "name": "Bitcoin"}},
+    {"model": "products.product", "pk": 2, "fields": {"ticker": "ETH-USD", "name": "Ethereum"}},
+    {"model": "products.product", "pk": 3, "fields": {"ticker": "ADA-USD", "name": "Cardano"}},
+    {"model": "products.product", "pk": 4, "fields": {"ticker": "SOL-USD", "name": "Solana"}}
+]

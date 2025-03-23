@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if product %}Edit Product{% else %}Update Product{% endif %}</title>
+</head>
+<body>
+    <h1>{% if product %}Update Product{% else %}Create Product{% endif %}</h1>
+
+    <!-- Form for creating or editing a product -->
+    <form method="POST">
+        {% csrf_token %}
+        <!-- Render the form fields -->
+        {{ form.as_p }}
+        
+        <!-- Submit button with dynamic text based on create or edit -->
+        <button type="submit">
+            {% if product %}Update Product{% else %}Update Product{% endif %}
+        </button>
+    </form>
+
+    <br>
+    <!-- Link to go back to the product list -->
+    <a href="{% url 'product_list' %}">Back to Product List</a>
+</body>
+</html>
